@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #030518 !important;
   color: #ffffff !important;
- 
+
 }
 
 p {
@@ -100,7 +100,6 @@ code {
   background-color: #00000075 !important;
 }
 
-
 .skblue {
   background-color: #003cff94 !important;
 
@@ -111,11 +110,10 @@ code {
 
 }
 
-
 .center-screen {
   position: absolute;
-      top: 50%;
-      left: 50%;
-      margin-right: -50%;
-      transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
