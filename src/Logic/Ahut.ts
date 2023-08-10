@@ -1,5 +1,5 @@
 import React from 'react';
-import {Dispatch, SetStateAction} from 'react';
+import { Dispatch, SetStateAction } from 'react';
 
 export function getToken(): string | null {
   if (localStorage.getItem('Token') === null) {
@@ -12,11 +12,11 @@ export function localStorageCheckAhut(): boolean {
   return localStorage.getItem('Token') !== null;
 }
 
- type LoginProvider = {
+type LoginProvider = {
   usLogin: boolean;
   setLogin: Dispatch<SetStateAction<boolean>>;
 };
 export const LoginInC = React.createContext<LoginProvider>({
   usLogin: localStorageCheckAhut(),
-  setLogin: () => {},
+  setLogin: () => { },
 });
