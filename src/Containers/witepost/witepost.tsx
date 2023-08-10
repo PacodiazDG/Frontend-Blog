@@ -11,6 +11,7 @@ import Qfetch from '../../Logic/Http_Ferch';
 import {Api} from '../../types';
 import {ButtonType1} from '../../Componets/custombuttons';
 import {responseJson} from '../../Logic/ToolkitFerch';
+import rehypeSanitize from 'rehype-sanitize';
 const MDEditor = React.lazy(() => import('@uiw/react-md-editor'));
 function Writepost() {
   const [Preview, setPreview] = useState(false);
@@ -204,6 +205,7 @@ function Writepost() {
                         components: {
                           img: CustomRenders.img,
                         },
+                        rehypePlugins: [rehypeSanitize],
                       }}
                       onChange={(e)=>{
                         setApi((prevState) => ({
