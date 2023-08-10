@@ -19,7 +19,8 @@ const Qfetch={
   },
 
 
-  ahutRqst(Fullurl:string, OptionalHeaders:HeadersInit | undefined=undefined, OptionalRequestInit:RequestInit | undefined=undefined):Promise<Response> {
+  ahutRqst(Fullurl:string, OptionalHeaders:HeadersInit | undefined=undefined,
+      OptionalRequestInit:RequestInit | undefined=undefined):Promise<Response> {
     let finalheaders:RequestInit={
       headers: {
         'Authorization': getToken() as string,
