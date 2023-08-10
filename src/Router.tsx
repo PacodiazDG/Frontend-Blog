@@ -33,16 +33,16 @@ function KRouter() {
         {isMobile()?<MobileMenu/>:null}
         <Menu />
         <Routes>
-          <Route exact={true} path="/About" element={<About></About>} />
-          <Route exact={true} path="/Pages" element={<Page></Page>} />
-          <Route exact={true} path="/Search" element={<Search></Search>} />
+          <Route exact={true} path="/about" element={<About></About>} />
+          <Route exact={true} path="/pages" element={<Page></Page>} />
+          <Route exact={true} path="/search" element={<Search></Search>} />
           <Route exact={true} path="/" element={<Index></Index>} />
-          <Route exact={true} path="/Login" element={<Login></Login>} />
-          <Route exact={true} path="/WritePost" element={<Writepost></Writepost>} />
+          <Route exact={true} path="/login" element={<Login></Login>} />
+          <Route exact={true} path="/writePost" element={<Writepost></Writepost>} />
           <Route exact={true} path="/403" element={<Code403></Code403>} />
-          <Route exact={true} path="/Drafts" element={<Drafts></Drafts>} />
-          <Route exact={true} path="/My" element={<My></My>} />
-          <Route exact={true} path="/BlogEngine" element={<BlogEngine></BlogEngine>} />
+          <Route exact={true} path="/drafts" element={<Drafts></Drafts>} />
+          <Route exact={true} path="/my" element={<My></My>} />
+          <Route exact={true} path="/blogEngine" element={<BlogEngine></BlogEngine>} />
           <Route exact={true} path="*" element={<NotFound></NotFound>} />
         </Routes>
         <Footerweb/>
