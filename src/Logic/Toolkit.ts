@@ -6,7 +6,7 @@ export function getParamswithoutSlash(
   return new URL(url).searchParams.get(params);
 }
 
-export const dateFormatShort: Intl.DateTimeFormatOptions = { weekday: undefined, year: 'numeric', month: 'short', day: 'numeric' };
+export const dateFormatShort: Intl.DateTimeFormatOptions = {weekday: undefined, year: 'numeric', month: 'short', day: 'numeric'};
 
 export function GetParams(url: string, params: string): string | null {
   return new URL(url).searchParams.get(params);
@@ -68,11 +68,11 @@ export function disableScrolling() {
   const x = window.scrollX;
   const y = window.scrollY;
   document.body.style.overflow = 'hidden';
-  window.onscroll = function () {
+  window.onscroll = function() {
     window.scrollTo(x, y);
   };
 }
 
 export function enableScrolling() {
-  window.onscroll = function () { };
+  window.onscroll = function() { };
 }
