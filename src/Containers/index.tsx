@@ -33,7 +33,6 @@ function Index() {
   const [Cols, setCols] = useState('·');
   let cardsControl: number = 0;
   let awaitFetch = false;
-  console.log(Cards.length);
   const fetchApi = (item: Number) => {
     fetch(`${config.ApiBackend}${config.ApiRoutes.Blog[0].GetFeed}?next=${item}`)
         .then((response) => responseJson(response))
