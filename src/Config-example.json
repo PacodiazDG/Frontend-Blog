@@ -30,7 +30,7 @@
     }
   ],
   "ApiBackend": "https://localhost:8081",
-  "ImgSoruce": "https://api.s2-skybackend.xyz/assets/blog/",
+  "ImgSoruce": "https://localhost:8081",
   "ApiRoutes": {
     "Blog": [
       {
