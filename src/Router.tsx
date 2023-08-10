@@ -30,7 +30,7 @@ function KRouter() {
     <Router basename={process.env.PUBLIC_URL}>
       <ResetScroll/>
       <LoginInC.Provider value={value}>
-        {isMobile()?<MobileMenu/>:null}
+        {isMobile() && <MobileMenu/>}
         <Menu />
         <Routes>
           <Route exact={true} path="/about" element={<About></About>} />
