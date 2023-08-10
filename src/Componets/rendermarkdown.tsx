@@ -4,7 +4,8 @@ import React, {useEffect, useRef, useState} from 'react';
 import configData from '../Config.json';
 
 export const CustomRenders = {
-  Code({className, children}: { className?: string | undefined, children: any } ) {
+  Code({className, children}:
+     { className?: string | undefined, children: any } ) {
     if ( className===undefined ) {
       className='text';
     }
