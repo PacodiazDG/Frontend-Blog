@@ -31,7 +31,6 @@ const CardRender = {
           to={props.id}
           style={{color: 'inherit', textDecoration: 'inherit'}}
           isActive={(match: { params: { id: string; }; }, location: any) => {
-            console.log(match);
             if (!match) {
               return false;
             }
