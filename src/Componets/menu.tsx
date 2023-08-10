@@ -89,7 +89,7 @@ function Menu() {
               </p>
             </Link>
           </div>
-          <div className="w-75 me-4" id="navbarNav">
+          <div className="w-100 me-4" id="navbarNav">
             <div className="d-flex mt-2 justify-content-end  align-items-center">
               {isMobile() ? (
                 <div className=" h-100 align-items-center">
