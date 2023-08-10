@@ -117,12 +117,14 @@ function Writepost() {
 
   const sendData = (Endpoint: string) => {
     let method:string='Post';
-    const updated =Endpoint===configData.ApiRoutes.Blog[0].UpdatePost||Endpoint===configData.ApiRoutes.Drafts[0].UpdatePost;
+    const updated =Endpoint===configData.ApiRoutes.Blog[0].UpdatePost||
+    Endpoint===configData.ApiRoutes.Drafts[0].UpdatePost;
     if (updated) {
       method='PUT';
       Endpoint=Endpoint+id;
     }
-    Qfetch.ahutRqst(`${configData.ApiBackend}${Endpoint}`, undefined, {method: method, body: JSON.stringify(Api.Post)})
+    Qfetch.ahutRqst(`${configData.ApiBackend}${Endpoint}`,
+        undefined, {method: method, body: JSON.stringify(Api.Post)})
         .then((e)=>{
           responseJson(e);
           if (e.status===200 ) {
