@@ -31,7 +31,7 @@ function indexcardRender(args: Api.Feed[]): JSX.Element[] | undefined {
 function Index() {
   const [Cards, setCards] = useState<Api.Feed[]>([]);
   const [Cols, setCols] = useState('·');
-  let cardsControl: number = 0;
+  let cardsControl = 0;
   let awaitFetch = false;
   const fetchApi = (item: Number) => {
     fetch(`${config.ApiBackend}${config.ApiRoutes.Blog[0].GetFeed}?next=${item}`)
@@ -75,18 +75,18 @@ function Index() {
           </div>}
         </p>
         {
-          Cards.length!==0 && !isMobile()?(
-          <div className="d-flex flex-row mb-4">
-            <div>
-              <CardRender.Card2
-                Imagen={Cards[0].Imagen}
-                Title={Cards[0].Title}
-                Content={Cards[0].Description}
-                Date={((Cards[0].Date).toString())}
-                id={`/Pages?id=${Cards[0].ID}`}/>
+          Cards.length!==0 && !isMobile() && (
+            <div className="d-flex flex-row mb-4">
+              <div>
+                <CardRender.Card2
+                  Imagen={Cards[0].Imagen}
+                  Title={Cards[0].Title}
+                  Content={Cards[0].Description}
+                  Date={((Cards[0].Date).toString())}
+                  id={`/Pages?id=${Cards[0].ID}`}/>
+              </div>
             </div>
-          </div>
-          ): null
+          )
         }
 
         <div className={Cols}>
