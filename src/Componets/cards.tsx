@@ -26,7 +26,7 @@ const CardRender = {
       }
     }, []);
     return (
-      <div className="col-sm Card1">
+      <div className="col-sm p-1">
         <NavLink
           to={props.id}
           style={{color: 'inherit', textDecoration: 'inherit'}}
@@ -38,9 +38,9 @@ const CardRender = {
             return !isNaN(eventID) && eventID % 2 === 1;
           }}
         >
-          <div className="" ref={elementRef}>
+          <div ref={elementRef}>
             <img
-              className="rounded-3 Imagecard w-100 "
+              className=" w-100 rounded "
               src={props.Imagen+'?rs='+divSizeImage.clientWidth}
               alt=""
               loading="lazy"
@@ -48,16 +48,17 @@ const CardRender = {
               height={divSizeImage.clientWidth/2}
             ></img>
           </div>
-          <p className="fs-4 fw-bolder"> {props.Title}</p>
-          <p className="text-justify ">
-            <ReactMarkdown
-              components={{code: CustomRenders.Code}}
-              skipHtml={true}
-            >
-              {props.Content}
-            </ReactMarkdown>
-          </p>
-
+          <div className='pt-3'>
+            <p className="fs-4  "> {props.Title}</p>
+            <p className="text-justify ">
+              <ReactMarkdown
+                components={{code: CustomRenders.Code}}
+                skipHtml={true}
+              >
+                {props.Content}
+              </ReactMarkdown>
+            </p>
+          </div>
           <p className="fs-6 fw-bold text-white-50">{(new Date(props.Date)).toLocaleDateString(undefined, dateFormatShort)}</p>
         </NavLink>
       </div>
@@ -96,9 +97,9 @@ const CardRender = {
         style={{color: 'inherit', textDecoration: 'inherit'}}
       >
         <div className="d-flex">
-          <div className="p-2 w-50" ref={elementRef}>
+          <div className="p-2 w-75" ref={elementRef}>
             <img
-              className="rounded-3 Imagecard w-100  h-100"
+              className="w-100  h-100"
               src={props.Imagen+'?rs='+divSizeImage.clientWidth}
               alt=""
               loading="lazy"

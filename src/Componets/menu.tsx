@@ -77,7 +77,7 @@ function Menu() {
   return (
     <div>
       <MenuTop />
-      <nav className=" navbar navbar-expand-lg navbar-light Menu ">
+      <nav className=" navbar navbar-expand-lg navbar-light Menu  ">
         <div className="container-fluid MenuPadding">
           <div className="mt-2 ">
             <Link to="/">
