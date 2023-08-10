@@ -1,0 +1,12 @@
+.Footer {
+  background-color: #c7c5c5;
+  height: 100px;
+  width: 100%;
+  border-top-style: solid;
+  border-top-color: rgb(255, 253, 253);
+  border-top-width: 1px;
+  padding-top: 1%;
+}
+.title {
+  font-size: 3vh;
+}

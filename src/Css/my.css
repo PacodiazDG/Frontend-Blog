@@ -1,0 +1,35 @@
+.Menuslide {
+  position: fixed;
+  width: 15%;
+  height: 100%;
+  background-color: #0a0a0a;
+  top: 0;
+}
+
+.MenuslideTopPadding {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+
+@media all and (max-width: 500px) and (min-height: 400px) {
+  .MenuslideTopPadding {
+    min-height: 75rem;
+    padding-top: 7rem;
+  }
+  .Menuslide {
+    position: fixed;
+    height: 100%;
+    background-color: #0a0a0a;
+    top: 0;
+    width: auto;
+  }
+}
+
+.MarginleftPanel {
+  margin-left: 6.5% !important;
+}
+
+.width90 {
+  width: 90%;
+  
+}

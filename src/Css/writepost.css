@@ -1,0 +1,42 @@
+.Editor {
+  width: 100%;
+  height: 100%;
+  background-color: #0f0f0f;
+  padding-top: 1%;
+}
+
+.textEditor {
+  border-color: white;
+  margin-left: 10%;
+  padding-top: 1%;
+  padding-right: 10%;
+}
+
+.inputTMercy {
+  background-color: #0f0f0f;
+  color: white;
+}
+
+.titleInputMercy {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 3ch;
+}
+
+.textedit {
+  width: 100%;
+}
+
+.tags {
+  margin-left: 2px;
+}
+
+.preview>p>img {
+  width: 100% !important;
+}
+
+.uploadfile {
+  width: 100%;
+  height: 7vh;
+  background-color: #b4b4b4;
+}

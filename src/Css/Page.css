@@ -1,0 +1,73 @@
+.PostContent {
+  width: 100%;
+  height: 100%;
+}
+.textArticleimg {
+  max-width: 100%;
+}
+.coverPage {
+  max-width: 80%;
+}
+.titleArticle {
+  font-size: 6vh;
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+}
+.PostImageBackground {
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.PostImageBackground:hover {
+  opacity: 0.1;
+}
+.textArticle {
+  padding-top: 40px;
+  font-size: 18px;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #333333;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #1f1f1f;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #272727;
+  border: 2px solid #555555;
+}
+.TagDiv {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 600px) {
+
+  .coverPage {
+    max-width: 100%;
+  }
+  .titleArticle {
+    margin-top: 20%;
+    font-size: 4vh;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+  }
+}
+
+.textArticle a:link {
+  color: rgb(0, 255, 255) !important;
+}
+a:visited {
+  color: pink;
+}

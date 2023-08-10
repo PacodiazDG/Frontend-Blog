@@ -1,0 +1,89 @@
+{
+  "NameSite": "root#:",
+  "RouterItems": [
+    {
+      "Name": "Incio",
+      "ShowInMenu": false,
+      "Ahut": false,
+      "Link": {
+        "Type": 0,
+        "Url": "/"
+      }
+    },
+    {
+      "Name": "write history",
+      "ShowInMenu": true,
+      "Ahut": true,
+      "Link": {
+        "Type": 0,
+        "Url": "/"
+      }
+    },
+    {
+      "Name": "Github",
+      "ShowInMenu": false,
+      "Ahut": false,
+      "Link": {
+        "Type": 1,
+        "Url": "/"
+      }
+    }
+  ],
+  "ApiBackend": "https://localhost:8081",
+  "ImgSoruce": "https://api.s2-skybackend.xyz/assets/blog/",
+  "ApiRoutes": {
+    "Blog": [
+      {
+        "InsertPost": "/v1/blog/auth/InsetPost",
+        "DelatePost": "/v1/blog/auth/DelatePost/",
+        "UpdatePost": "/v1/blog/auth/UpdatePost/",
+        "GetFeed": "/v1/blog/feed",
+        "GetPost": "/v1/blog/p/",
+        "FindPost": "/v1/blog/find",
+        "GetMyPost": "/v1/blog/auth/GetMyPost",
+        "UploadImage": "/v1/blog/auth/UploadImage",
+        "RecommendedPost":"/v1/blog/RecommendedPost"
+      }
+    ],
+    "Drafts": [
+      {
+        "InsertPost": "/v1/drafts/InsetPost",
+        "DelatePost": "/v1/drafts/DelatePost/",
+        "UpdatePost": "/v1/drafts/UpdatePost/",
+        "GetMyDrafts": "/v1/drafts/GetMyDrafts",
+        "GetPost": "/v1/drafts/p/",
+        "initialize": "/v1/drafts/initialize"
+      }
+    ],
+    "User": [
+      {
+        "Login": "/v1/user/login",
+        "My": "/v1/user/Ahut/My",
+        "CheckToken": "/v1/user/Ahut/CheckToken",
+        "GetMyDrafts": "/v1/drafts/GetMyDrafts",
+        "GetPost": "/v1/drafts/p/",
+        "initialize": "/v1/drafts/initialize",
+        "UpdateProfile":"/v1/user/Ahut/My",
+        "Sessions":"/v1/user/Ahut/Iploggeduser",
+        "DeleteSession":"/v1/user/Ahut/removeToken",
+        "DumpUsers":"/v1/admin/GetUsers",
+        "SignOut":"/v1/user/Ahut/signout"
+      }
+    ], "Admin": [
+      {
+        "UpdateCache": "/v1/admin/Cacherefresh",
+        "My": "/v1/user/Ahut/My",
+        "CheckToken": "/v1/user/Ahut/CheckToken",
+        "GetMyDrafts": "/v1/drafts/GetMyDrafts",
+        "GetPost": "/v1/drafts/p/",
+        "initialize": "/v1/drafts/initialize",
+        "UpdateProfile":"/v1/user/Ahut/My",
+        "Sessions":"/v1/user/Ahut/Iploggeduser",
+        "Ban":"/v1/admin/Ban",
+        "Unban":"/v1/admin/Unban",
+        "DelateAcount":"/v1/admin/DelateAcount",
+        "CreateAcount":"/v1/admin/CreateAccount"
+      }
+    ]
+  }
+}

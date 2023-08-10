@@ -1,0 +1,14 @@
+.ListOfItemsIndex {
+  border-bottom: 1px solid rgb(129, 129, 129);
+  padding-left: 1%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+.joinBtn {
+  color: rgb(175, 175, 175);
+}
+
+.joinBtn:hover {
+  color: white;
+}

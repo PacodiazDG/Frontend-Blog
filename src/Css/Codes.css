@@ -1,0 +1,8 @@
+.NotFound {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  margin-top: -50px;
+  margin-left: -50px;
+  height: 100px;
+}
