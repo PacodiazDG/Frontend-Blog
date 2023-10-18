@@ -45,12 +45,12 @@ export const CustomRenders = {
     } else {
       return (
         <div ref={elementRef}>
-          <a href={`${configData.ApiBackend}${props.src}`} target='_blank' rel="noreferrer">
+          <a href={`${configData.ImgSoruce}${props.src}`} target='_blank' rel="noreferrer">
             <img
               className="textArticleimg rounded-3"
               loading="lazy"
               alt={props.alt}
-              src={`${configData.ApiBackend}${props.src}?rs=${Width}`}
+              src={`${configData.ImgSoruce}${props.src}?rs=${Width}`}
               title={props.title}
             /></a>
         </div>
