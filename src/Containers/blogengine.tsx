@@ -17,7 +17,7 @@ function BlogEngine() {
         <h2 id="requirements">Requirements</h2>
         <ul>
           <li>Go 1.19 or higher.</li>
-          <li>MongoDB 3.6 and higher.</li>
+          <li>MongoDB 6.0 and higher.</li>
           <li>RedisDB 7.0 and higher.</li>
         </ul>
         <h2 id="installation">Installation</h2>
