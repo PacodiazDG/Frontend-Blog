@@ -1,6 +1,5 @@
 import React from 'react';
 import './../Css/List.css';
-import configData from '../Config.json';
 
 function Footerweb() {
   return (
@@ -10,7 +9,7 @@ function Footerweb() {
           <div className="row  ">
             <div className="col">
               <div className="p-3">
-                <p className='fw-bold'>{configData.NameSite}</p>
+                <p className='fw-bold'>Dev // Notes // Code</p>
               </div>
             </div>
             <div className="col ">

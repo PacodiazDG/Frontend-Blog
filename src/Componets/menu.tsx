@@ -87,6 +87,7 @@ function Menu() {
               >
                 {configData.NameSite}
               </p>
+              <p className="text-nowrap text-decoration-none text-white" style={{fontSize: '14px'}}>Dev // Notes // Code</p>
             </Link>
           </div>
           <div className="w-100 me-4" id="navbarNav">
